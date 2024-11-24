@@ -1,0 +1,251 @@
+@font-face {
+    font-family: cars;
+    src: url(./Font/MAGNETOB.TTF);
+}
+
+/* *{
+    outline: red dashed 1px;
+}* */
+    
+
+body{
+    background-image: url(./Bilder/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.layout{
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+h1{
+    color: rgb(167, 18, 18);
+    font-family: cars;
+    font-size: 16em;
+    margin-top: 4vh;
+    margin-left: 1.4vw;
+}
+
+#animationLightning img{
+    position: absolute;
+    width: 3vw;
+    margin-left: 10%;
+    margin-top: 39%;
+
+    animation-name: lightning;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+#animationHook img{
+    position: absolute;
+    width: 3vw;
+    margin-left: 33%;
+    margin-top: 20%;
+
+    animation-name: hook;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+#logo img{
+    position: absolute;
+    width: 20vw;
+    margin-top: 38vh;
+    margin-left: 13vw;
+}
+
+/*Keyframes*/
+@keyframes hook {
+    0%{margin-left: 33%;
+        margin-top: 20%;
+    }
+    25%{margin-left: 10%;
+        margin-top: 20%;
+    }
+    50%{
+        margin-left: 10%;
+        margin-top: 37%
+    }
+    75%{margin-left: 33%;
+        margin-top: 37% ;
+    }
+    100%{margin-left: 33%;
+        margin-top: 20%;
+    }
+}
+
+@keyframes lightning {
+    0%{margin-left: 10%;
+        margin-top: 37%;
+    }
+    25%{margin-left: 33%;
+        margin-top: 37%
+    }
+    50%{margin-left: 33%;
+        margin-top: 20% ;
+    }
+    75%{margin-left: 10%;
+        margin-top: 20%;
+    }
+    100%{margin-left: 10%;
+        margin-top: 37%;
+    }
+}
+
+
+#pictures{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+
+    margin-top: 4vh;
+    height: 80vh;
+    
+}
+.soundtracks{
+    background-color: rgba(228, 78, 78, 0.299);
+    clip-path: polygon(25% 0%, 90% 0, 65% 100%, 0% 100%);
+
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+
+    animation-name: transform;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+
+    height:  40vw;
+
+    border-bottom-left-radius: 3vw;
+
+    color: beige;
+
+
+}
+.characters{
+    background-color: rgba(228, 78, 78, 0.299);
+    clip-path: polygon(25% 0%, 90% 0, 65% 100%, 0% 100%);
+
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+
+    animation-name: transform;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+
+    height:  35vw;
+
+    border-bottom-left-radius: 2.5vw;
+    
+}
+
+
+.trailer{
+    background-color: rgba(228, 78, 78, 0.299);
+    clip-path: polygon(25% 0%, 90% 0, 65% 100%, 0% 100%);
+
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+
+    animation-name: transform;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+
+    height:  30vw;
+
+    border-bottom-left-radius: 2vw;
+}
+
+.story{
+    background-color: rgba(228, 78, 78, 0.299);
+    clip-path: polygon(25% 0%, 90% 0, 65% 100%, 0% 100%);
+
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+
+    animation-name: transform;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+
+    height:  25vw;
+
+    border-bottom-left-radius: 1.5vw;
+}
+
+.letter{
+    color: rgba(33, 33, 33, 0.733);
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    margin-top: 5vh;
+    margin-left: 5.5vw;
+    padding-top: 3vh;
+
+}
+
+a{
+   text-decoration: none;
+}
+
+.characters:hover{
+    background-color: rgba(88, 0, 0, 0.874);
+    
+    transform: scale(1.2);    
+}
+.trailer:hover{
+    background-color: rgba(88, 0, 0, 0.874);
+
+    transform: scale(1.2);
+}
+.soundtracks:hover{
+    background-color: rgba(88, 0, 0, 0.874);
+
+    transform: scale(1.2);
+}
+.story:hover{
+    background-color: rgba(88, 0, 0, 0.874);
+
+    transform: scale(1.2);
+}
+
+.story p{
+    color: rgba(33, 33, 33, 0.733);
+
+    transition: color 0.5s ease-out;
+}
+
+.story:hover p{
+    color: aliceblue;
+}
+.trailer p{
+    color: rgba(33, 33, 33, 0.733);
+
+    transition: color 0.5s ease-out;
+}
+
+.trailer:hover p{
+    color: aliceblue;
+}
+.characters p{
+    color: rgba(33, 33, 33, 0.733);
+
+    transition: color 0.5s ease-out;
+}
+
+.characters:hover p{
+    color: aliceblue;
+}
+.soundtracks p{
+    color: rgba(33, 33, 33, 0.733);
+
+    transition: color 0.5s ease-out;
+}
+
+.soundtracks:hover p{
+    color: aliceblue;
+}
